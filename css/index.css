@@ -1,0 +1,263 @@
+
+:root { 
+  --bgshade: #eeeffb; 
+  --greytext: #151875; 
+  --primary: #fb2e86; 
+  --white: #ffffff; 
+  --linerbg: linear-gradient(32deg, #f3f9ff 0%, #f1f0ff 100%); 
+  --mintgreengradiant: linear-gradient(42deg, #36e6d5 0%, #29e871 100%); 
+  --text: #151875; 
+  --red: #fb2448; 
+  --subtextcolor: linear-gradient(32deg, #f3f9ff 0%, #f1f0ff 100%); 
+  --subtextcolor: #8a8fb9; 
+  --bg: #ebebeb; 
+  --black: #111111; 
+  --subtitles-22bold: 700 1.375rem/normal Inter; 
+  --subtitles-32bold: 700 2rem/2.5rem Inter; 
+  --body-18regular: 400 1.125rem/2rem Inter; 
+  --body-18regular_u: 400 1.125rem/2rem Inter; 
+  --body-16regular: 400 1rem/1.5rem Inter; 
+  --body-18semibold: semi bold 1.125rem/2rem Inter; 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--primary);
+  background-color: var(--bgshade);
+  font-family: Inter,Arial;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+
+.header_menu{
+  
+
+}
+
+nav{
+  max-inline-size: 1366px;
+  margin: 0 auto;
+  block-size: 96px;
+  padding-block: 24px;
+}
+
+.header_logo{
+  height: 48px;
+  width: auto;
+  float: left;
+}
+
+nav ul{
+  display: inline-block;
+}
+
+nav ul li{
+  display:inline-block;
+  block-size: 48px;
+  margin-inline-start: 48px;
+  padding-block: 8px;
+ 
+}
+
+.header_input{
+  display: inline-block;
+  margin-inline-start: 48px;
+  background-color: lightsteelblue;
+  max-width: 743px;
+  
+}
+.header_input form button{
+
+  width: 51px;
+  height: 40px;
+  background-color: var(--primary);
+  background-image: url(/images/search_vector.png) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0px;
+  float: right;
+  margin:0;
+}
+
+
+.header_input form input[type=text]{
+
+ border: 2px solid var(--subtextcolor);
+ height: 40px;
+ width: 666px;
+ padding: 8px;
+ color: var(--subtextcolor);
+ font-family: Inter,Arial;
+  font-size: 18px;
+  font-weight: 400;
+ 
+ 
+}
+
+.header_icon_search{
+  margin-inline-start: 0px;
+  background-color: var(--primary);
+  height: 40px;
+}
+
+.slider{
+  background-color: #4853C2;
+}
+
+
+.slider_content{
+  margin: 0 auto;
+  max-inline-size: 1366px;
+  block-size: 387px;
+  padding-block: 19px;
+ 
+}
+
+.slider_box_1{
+  margin-inline-end: 18px;
+  background: linear-gradient(105.15deg, #5465FF 0%, #B654EF 100%);
+  
+}
+
+.slider_box_2{
+  background: linear-gradient(105.15deg, #4E5AFF 0%, #5D8DFF 100%);
+}
+
+.slider_box_1 , .slider_box_2{
+  float: left;
+  width: 671px;
+  height: 100%;
+  background-color: red;
+  font: Inter,Arial;
+  padding-inline-start: 40px;
+  color: white;
+ 
+}
+
+.slider_title{
+  float: left;
+  width: 50%;
+  padding-top: 76.34px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34.6016px;
+}
+
+.slider_title a{
+  font-weight: normal;
+  font-size: 24.7154px;
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+}
+.slider_title a:hover{
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid white;
+}
+.slider_product{
+
+  float: left;
+  width: 50%;
+}
+
+main{
+  margin-block-start: 40px;
+}
+.wrapper{
+  max-inline-size: 1366px;
+  margin: 0 auto;
+
+}
+
+.main-content h1{
+  color: var(--greytext);
+  font-size: 32px;
+}
+
+
+.main-content article{
+
+  background-color: white;
+  block-size: 249px;
+  inline-size: auto;
+  margin-block: 24px;
+  padding: 16px;
+}
+
+.article_product{
+  float: left;
+}
+
+.article_description{
+  float: left;
+  color: var(--greytext);
+  width: 729px;
+}
+
+.article_description h2{
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+
+.article_action{
+  float: right;
+  padding-top: 52px;
+  padding-left: 32px;
+  margin-right: 16px;
+
+}
+.actions{
+  height: 112px;
+  text-align: center;
+}
+
+.actions a{
+  text-decoration: none;
+  line-height: 32px;
+}
+
+.action{
+  color: white;
+  background-color: var(--primary);
+  height: 48px;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+.article_action a{
+  display: block;
+}
+
+.actual_price .old_price .stars{
+
+  line-height: 32px;
+  
+}
+.actual_price{
+
+  display: inline-block;
+}
+
+.old_price{
+  color: var(--primary);
+  display: inline-block;
+  text-decoration: line-through;
+}
+
+.stars{
+  display: inline-block;
+}
+.product_description{
+  margin-top: 12px;
+  color: var(--subtextcolor);
+}
+
