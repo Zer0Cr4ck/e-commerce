@@ -1,0 +1,136 @@
+article{
+    background: var(--white);
+    padding-block-start:1rem ;
+    padding-block-end:1rem;
+    padding-inline-end: 1rem;
+    padding-inline-start: 1rem;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    
+}
+
+.product_img{
+    text-align: center;
+    /* border: 1px solid red; */
+    
+}
+
+.product_img img{
+    block-size: 8.75rem;
+    inline-size: 200px;
+    vertical-align: top;
+}
+
+
+.product_description h3{
+    font: var(--subtitles-22bold);
+    margin-block-end: 1rem;
+}
+.product_description-prices{
+    margin-block-end: 1rem;
+}
+.product_description-prices span:nth-child(1){
+    color: var(--greytext);
+    font: var(--body-16regular);
+    font-weight: bold;
+    padding-inline-end: .5rem;
+}
+.product_description-prices span:nth-child(2){
+    color: var(--primary);
+    font: var(--body-16regular);
+    text-decoration: line-through;
+    padding-inline-end: .5rem;
+}
+.product_description-prices span:nth-child(3) img{
+    position: relative;
+    top: 2px;
+}
+
+.product_description p{
+    color: var(--subtextcolor);
+    font: var(--body-16regular);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-block-end: 1rem;
+}
+
+.product_buy{
+    block-size: 3rem;
+    background: var(--primary);
+    text-align: center;
+    padding-block-start: .5rem;
+    margin-block-end: 1rem;
+
+    
+}
+.product_buy:hover, .product_buy:hover a{
+    color: var(--primary);
+    background: var(--white);
+    border: 1px solid var(--primary);
+    
+}
+.product_buy:hover a{
+    border: none;
+}
+
+.product_buy a{
+    font: var(--body-18regular);
+    color: var(--white);
+    text-decoration: none;
+    display: block;
+}
+
+
+
+.product_add{
+    block-size: 3rem;
+    background: var(--white);
+    border: 1px solid var(--primary);
+    text-align: center;
+    padding-block-start: .5rem;
+    
+}
+.product_add a{
+    font: var(--body-18regular);
+    color: var(--primary);
+    text-decoration: none;
+    display: block;
+}
+
+.product_add:hover, .product_add:hover a{
+    color: var(--white);
+    background: var(--primary);
+    
+    
+}
+
+@media (min-width: 1025px){
+
+    article{
+        display: flex;
+        /* justify-content: space-between; */
+        gap: 2rem;
+    }
+
+   
+  
+    .product_action{
+        inline-size: 14rem;
+        /* border: 1px solid blue; */
+        flex-shrink: 0;
+        align-self: center;
+    }
+}
+
+   
+    
+@media (min-width: 1300px){
+
+    main{
+        max-inline-size: 81.25rem;
+        margin: 0 auto;
+    }
+}

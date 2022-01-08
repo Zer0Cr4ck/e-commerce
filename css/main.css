@@ -1,0 +1,15 @@
+.main{
+    margin-block-start: 1rem;
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
+    /* border: 1px solid red; */
+    color: var(--greytext);
+    
+}
+
+.main h1{
+    font: var(--subtitles-32bold);
+    margin-block-end: 1rem;
+}
+
+

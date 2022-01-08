@@ -1,0 +1,152 @@
+.hero{
+ 
+    background: var(--bghero);
+    padding-block-start:1rem;
+    padding-block-end: 1rem;
+    padding-inline-start: 1rem;
+    /* padding-inline-end: 1rem; */
+    block-size: 10rem;
+    
+}
+
+
+.hero_wrapper{
+    block-size: 8rem;
+    inline-size: 100%;
+    /* outline: 1px solid red; */
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+    
+}
+
+.hero_item1,.hero_item2{
+    /* border: 1px solid yellow; */
+    display: flex;
+    block-size: 8rem;
+    inline-size: 15.375rem;
+    flex-shrink: 0;
+    background: linear-gradient(105.15deg, #5465FF 0%, #B654EF 100%);
+    padding-inline-end: .5rem;
+
+}
+
+.hero_item1{
+    background: linear-gradient(105.15deg, #5465FF 0%, #B654EF 100%);
+}
+.hero_item2{
+    background: linear-gradient(105.15deg, #4E5AFF 0%, #5D8DFF 100%);
+}
+.hero_item--text{
+   color: var(--white);
+   font: var(--subtitles-14bold);
+   margin-inline-start: .9375rem;
+   margin-block-start: 1.75rem;
+   letter-spacing: .03rem;
+   flex-grow: 1;
+}
+
+.hero_item--text p{
+    margin-block-end: .5rem;
+}
+
+.hero_item--text a{
+    color: var(--white);
+    font: var(--body-10regular);
+    text-decoration: none;
+    padding-block-end: 1px ;
+   
+    border-block-end: 1px solid var(--white);
+
+}
+
+.hero_img{
+    /* border: 1px solid red; */
+    align-self: center;
+}
+
+
+@media screen and (min-width: 555px){
+   
+    .hero{
+ 
+        
+        padding-inline-end: 1rem;
+        block-size: auto;
+       
+        
+    }
+    .hero_wrapper{
+        block-size: auto;
+        inline-size: 100%;
+        /* outline: 1px solid red; */
+        
+        
+    }
+    .hero_item--text{
+        
+        font: var(--subtitles-22bold);
+        
+     }
+    .hero_item1,.hero_item2{
+        /* border: 1px solid yellow; */
+
+        block-size: 15rem;
+        flex-grow: 1;
+      
+    
+    }
+
+    .hero_img{
+        flex-grow: 1;
+        /* border: 1px solid red; */
+    }
+    .hero_img img{
+       width: 14rem;
+       height: 14rem;
+    }
+    
+  }
+  
+  @media (min-width: 1025px){
+    
+
+    .hero_wrapper{
+        block-size: auto;
+        inline-size: 100%;
+        /* outline: 1px solid red; */
+    }
+
+    .hero_item--text{
+        
+        font: var(--subtitles-32bold);
+        
+     }
+     .hero_item--text a{
+        
+        font: var(--body-16regular);
+        
+    
+    }
+   
+   
+
+  }
+
+  
+@media (min-width: 1300px){
+
+    .hero_wrapper{
+        /* display: block; */
+        max-inline-size: 81.25rem;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+    }
+
+    .hero_img img {
+        width: 17rem;
+        height: 17rem;
+    }
+}
